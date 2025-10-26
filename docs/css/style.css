@@ -89,6 +89,25 @@ header .catch {
   background: #333;
 }
 
+/* ====== play ====== */
+
+.play-btn {
+  display: inline-block;
+  background: #ff7b54;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.play-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
 /* ====== フッター ====== */
 footer {
   background: #fafafa;
