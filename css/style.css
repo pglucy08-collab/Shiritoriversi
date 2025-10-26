@@ -1,0 +1,111 @@
+/* ====== 基本設定 ====== */
+body {
+  font-family: "Rounded Mplus 1c", "Hiragino Maru Gothic ProN", sans-serif;
+  margin: 0;
+  background: #fffaf5;
+  color: #333;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+/* ====== ヘッダー ====== */
+header {
+  background: linear-gradient(90deg, #ffb6c1, #ffe066, #87cefa);
+  padding: 40px 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header .catch {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* ====== メイン画像 ====== */
+.main-image img {
+  max-width: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ====== あそびかた ====== */
+.howto h2, .features h2, .download h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+.step {
+  background: #ffe8a3;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ====== 特徴 ====== */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+.card {
+  background: #d8f3dc;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ====== ダウンロード ====== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.btn.google {
+  background: #34a853;
+}
+.btn.apple {
+  background: #333;
+}
+
+/* ====== フッター ====== */
+footer {
+  background: #fafafa;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ====== レスポンシブ対応 ====== */
+@media (min-width: 768px) {
+  .steps, .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .step, .card {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
