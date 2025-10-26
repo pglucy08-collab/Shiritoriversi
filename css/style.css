@@ -24,6 +24,25 @@ header .catch {
   margin-top: 10px;
 }
 
+/*========ポータルサイト========*/
+.back-btn.top-right {
+  position: fixed;   /* ✅ これで右上に固定 */
+  top: 20px;
+  right: 20px;
+  background: #ff7b54;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000; /* ゲーム画面の上に表示されるようにする */
+}
+
+.back-btn.top-right:hover {
+  background: #ff6338;
+}
+
 /* ====== メイン画像 ====== */
 .main-image img {
   max-width: 90%;
