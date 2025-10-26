@@ -14,34 +14,39 @@ h1, h2 {
 /* ====== ヘッダー ====== */
 header {
   background: linear-gradient(90deg, #ffb6c1, #ffe066, #87cefa);
-  padding: 40px 20px;
+  padding: 80px 20px 40px; /* 上に余白を多めにとる（ボタン分） */
+  text-align: center;      /* タイトルとキャッチを中央揃え */
+  position: relative;
 }
+
 header h1 {
   font-size: 2.5rem;
+  margin: 0;
 }
+
 header .catch {
   font-size: 1.2rem;
   margin-top: 10px;
 }
 
-/*========ポータルサイト========*/
-.back-btn.top-right {
-  position: fixed;   /* ✅ これで右上に固定 */
+/* ✅ 右上固定ボタン */
+.back-btn {
+  position: absolute;  /* headerの中で右上に配置 */
   top: 20px;
   right: 20px;
   background: #ff7b54;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 16px;
+  border-radius: 20px;
   text-decoration: none;
-  border-radius: 25px;
   font-size: 0.9rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  z-index: 1000; /* ゲーム画面の上に表示されるようにする */
+  transition: background 0.2s;
 }
 
-.back-btn.top-right:hover {
+.back-btn:hover {
   background: #ff6338;
 }
+
 
 /* ====== メイン画像 ====== */
 .main-image img {
